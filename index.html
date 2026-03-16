@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizzagram Restaurant – India's Most Loved Pizza Experience</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">🍕</span>
+        <span class="logo-text">Pizzagram</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#app" class="nav-cta">Order Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="floating-pizza fp1">🍕</div>
+      <div class="floating-pizza fp2">🍕</div>
+      <div class="floating-pizza fp3">🍕</div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🇮🇳 India's #1 Pizza App</div>
+      <h1 class="hero-title">
+        <span class="hero-brand">Pizzagram</span>
+        <span class="hero-sub">Restaurant</span>
+      </h1>
+      <p class="hero-tagline">India's Most Loved Pizza Experience</p>
+      <p class="hero-desc">Authentic Italian flavours crafted with fresh Indian ingredients — delivered hot to your door in 30 minutes or less.</p>
+      <div class="hero-buttons">
+        <a href="#" class="store-btn google-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.5c.38.21.82.24 1.23.08l11.65-6.73-2.56-2.56L3.18 23.5zm14.35-8.29L5.35 8.5 3.18.5C2.77.34 2.32.37 1.94.58 1.56.79 1.33 1.18 1.33 1.6v20.8c0 .42.23.81.61 1.02.19.11.4.16.62.16.2 0 .41-.05.6-.14l15.37-8.88-.9-.45zM19.5 10.38l-2.25-1.3-2.72 2.72 2.72 2.72 2.27-1.31c.65-.38.65-1.47-.02-1.83zM5.35 8.5l12.18 6.69.9-.52-11.65-6.73L5.35 8.5z"/></svg>
+          <div class="btn-text"><small>Get it on</small><strong>Google Play</strong></div>
+        </a>
+        <a href="#" class="store-btn apple-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <div class="btn-text"><small>Download on the</small><strong>App Store</strong></div>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">4.8⭐</span><span>Rating</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">10K+</span><span>Customers</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">30min</span><span>Delivery</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="pizza-showcase">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Featured Pizza" class="hero-pizza-img"/>
+        <div class="pizza-ring pizza-ring-1"></div>
+        <div class="pizza-ring pizza-ring-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ APP PROMO ═══════════════ -->
+  <section class="app-promo" id="app-promo">
+    <div class="container">
+      <div class="section-label">📱 Download the App</div>
+      <h2 class="section-title">Order Pizza <em>Anywhere, Anytime</em></h2>
+      <p class="section-desc">Get exclusive app-only deals, track your order in real-time, and enjoy a seamless ordering experience.</p>
+      <div class="app-cards">
+        <div class="app-card android-card">
+          <div class="app-card-icon">
+            <svg viewBox="0 0 24 24" fill="white" width="40" height="40"><path d="M3.18 23.5c.38.21.82.24 1.23.08l11.65-6.73-2.56-2.56L3.18 23.5zm14.35-8.29L5.35 8.5 3.18.5C2.77.34 2.32.37 1.94.58 1.56.79 1.33 1.18 1.33 1.6v20.8c0 .42.23.81.61 1.02.19.11.4.16.62.16.2 0 .41-.05.6-.14l15.37-8.88-.9-.45zM19.5 10.38l-2.25-1.3-2.72 2.72 2.72 2.72 2.27-1.31c.65-.38.65-1.47-.02-1.83zM5.35 8.5l12.18 6.69.9-.52-11.65-6.73L5.35 8.5z"/></svg>
+          </div>
+          <h3>Android App</h3>
+          <p>Available on Google Play Store for all Android devices running 5.0+</p>
+          <ul class="app-features">
+            <li>✓ Live order tracking</li>
+            <li>✓ Exclusive app offers</li>
+            <li>✓ Easy reorder</li>
+          </ul>
+          <a href="#" class="store-btn google-btn full-width">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M3.18 23.5c.38.21.82.24 1.23.08l11.65-6.73-2.56-2.56L3.18 23.5zm14.35-8.29L5.35 8.5 3.18.5C2.77.34 2.32.37 1.94.58 1.56.79 1.33 1.18 1.33 1.6v20.8c0 .42.23.81.61 1.02.19.11.4.16.62.16.2 0 .41-.05.6-.14l15.37-8.88-.9-.45zM19.5 10.38l-2.25-1.3-2.72 2.72 2.72 2.72 2.27-1.31c.65-.38.65-1.47-.02-1.83zM5.35 8.5l12.18 6.69.9-.52-11.65-6.73L5.35 8.5z"/></svg>
+            <div class="btn-text"><small>Get it on</small><strong>Google Play</strong></div>
+          </a>
+        </div>
+        <div class="app-card-divider">
+          <span>OR</span>
+        </div>
+        <div class="app-card ios-card">
+          <div class="app-card-icon apple-icon">
+            <svg viewBox="0 0 24 24" fill="white" width="40" height="40"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          </div>
+          <h3>iOS App</h3>
+          <p>Available on Apple App Store for iPhone and iPad running iOS 13+</p>
+          <ul class="app-features">
+            <li>✓ Apple Pay support</li>
+            <li>✓ Siri shortcuts</li>
+            <li>✓ Widget support</li>
+          </ul>
+          <a href="#" class="store-btn apple-btn full-width">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div class="btn-text"><small>Download on the</small><strong>App Store</strong></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ MENU ═══════════════ -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-label">🍕 Our Menu</div>
+      <h2 class="section-title">Our <em>Signature</em> Pizzas</h2>
+      <p class="section-desc">Hand-crafted with the finest ingredients, baked to golden perfection in our stone ovens.</p>
+      <div class="menu-grid">
+
+        <div class="menu-card" data-veg="true">
+          <div class="veg-badge">🟢 VEG</div>
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80" alt="Margherita Pizza" loading="lazy"/>
+            <div class="menu-overlay"><span>Order Now</span></div>
+          </div>
+          <div class="menu-info">
+            <h3>Margherita Pizza</h3>
+            <p>Classic tomato base, fresh mozzarella, basil leaves & a drizzle of extra-virgin olive oil.</p>
+            <div class="menu-footer">
+              <span class="price">₹249</span>
+              <button class="add-btn" onclick="addToCart(this)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-veg="true">
+          <div class="veg-badge">🟢 VEG</div>
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80" alt="Farmhouse Pizza" loading="lazy"/>
+            <div class="menu-overlay"><span>Order Now</span></div>
+          </div>
+          <div class="menu-info">
+            <h3>Farmhouse Pizza</h3>
+            <p>Loaded with capsicum, onion, mushroom, golden corn & fresh tomatoes on tangy sauce.</p>
+            <div class="menu-footer">
+              <span class="price">₹299</span>
+              <button class="add-btn" onclick="addToCart(this)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-veg="true">
+          <div class="veg-badge">🟢 VEG</div>
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&q=80" alt="Paneer Tikka Pizza" loading="lazy"/>
+            <div class="menu-overlay"><span>Order Now</span></div>
+          </div>
+          <div class="menu-info">
+            <h3>Paneer Tikka Pizza</h3>
+            <p>Marinated tandoori paneer, onions, capsicum & mint chutney drizzle — pure desi joy.</p>
+            <div class="menu-footer">
+              <span class="price">₹329</span>
+              <button class="add-btn" onclick="addToCart(this)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card bestseller">
+          <div class="veg-badge">🟢 VEG</div>
+          <div class="bestseller-tag">🔥 Bestseller</div>
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=80" alt="Cheese Burst Pizza" loading="lazy"/>
+            <div class="menu-overlay"><span>Order Now</span></div>
+          </div>
+          <div class="menu-info">
+            <h3>Cheese Burst Pizza</h3>
+            <p>A gooey, oozy cheese-filled crust that erupts with flavour in every single bite.</p>
+            <div class="menu-footer">
+              <span class="price">₹399</span>
+              <button class="add-btn" onclick="addToCart(this)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-veg="true">
+          <div class="veg-badge">🟢 VEG</div>
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555072956-7758afb20e8f?w=400&q=80" alt="Veg Supreme Pizza" loading="lazy"/>
+            <div class="menu-overlay"><span>Order Now</span></div>
+          </div>
+          <div class="menu-info">
+            <h3>Veg Supreme Pizza</h3>
+            <p>The ultimate veggie feast — 7 premium toppings stacked high on our signature sauce.</p>
+            <div class="menu-footer">
+              <span class="price">₹349</span>
+              <button class="add-btn" onclick="addToCart(this)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="veg-badge nonveg">🔴 NON-VEG</div>
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=400&q=80" alt="Pepperoni Pizza" loading="lazy"/>
+            <div class="menu-overlay"><span>Order Now</span></div>
+          </div>
+          <div class="menu-info">
+            <h3>Pepperoni Pizza</h3>
+            <p>Loaded with crispy pepperoni slices, double cheese & spicy marinara for the meat lovers.</p>
+            <div class="menu-footer">
+              <span class="price">₹449</span>
+              <button class="add-btn" onclick="addToCart(this)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ RATINGS ═══════════════ -->
+  <section class="ratings-section" id="reviews">
+    <div class="container">
+      <div class="ratings-top">
+        <div class="big-rating">
+          <div class="rating-number">4.8</div>
+          <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+          <div class="rating-label">Average Rating</div>
+        </div>
+        <div class="rating-stats">
+          <div class="rstat">
+            <span class="rstat-num">10,000+</span>
+            <span class="rstat-label">Happy Customers</span>
+          </div>
+          <div class="rstat">
+            <span class="rstat-num">50+</span>
+            <span class="rstat-label">Menu Items</span>
+          </div>
+          <div class="rstat">
+            <span class="rstat-num">30 min</span>
+            <span class="rstat-label">Avg. Delivery</span>
+          </div>
+          <div class="rstat">
+            <span class="rstat-num">5⭐</span>
+            <span class="rstat-label">Food Safety Score</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-label" style="margin-top:3rem;">💬 Customer Reviews</div>
+      <h2 class="section-title">What India <em>Says About Us</em></h2>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-top">
+            <div class="reviewer-avatar">RS</div>
+            <div>
+              <div class="reviewer-name">Rahul Sharma</div>
+              <div class="reviewer-loc">📍 Mumbai, Maharashtra</div>
+            </div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="review-text">"Absolutely the best pizza I've ever had in Mumbai! The Cheese Burst is next level — it literally burst with cheese. Delivery was super fast, under 25 minutes. Highly recommended! 🍕"</p>
+          <div class="review-date">2 days ago · via Pizzagram App</div>
+        </div>
+
+        <div class="review-card featured-review">
+          <div class="review-top">
+            <div class="reviewer-avatar">PP</div>
+            <div>
+              <div class="reviewer-name">Priya Patel</div>
+              <div class="reviewer-loc">📍 Ahmedabad, Gujarat</div>
+            </div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="review-text">"As a Gujarati foodie, I was sceptical about pizza. But the Paneer Tikka Pizza changed my life! The desi twist is perfect. My whole family orders every Friday night now. The app is so easy to use too! 👌"</p>
+          <div class="review-date">1 week ago · via Pizzagram App</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-top">
+            <div class="reviewer-avatar">AS</div>
+            <div>
+              <div class="reviewer-name">Amit Singh</div>
+              <div class="reviewer-loc">📍 Delhi, NCR</div>
+            </div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="review-text">"Yaar, Pizzagram is on another level! Ordered the Pepperoni and Farmhouse combo — both came piping hot. The packaging is also really nice. Will definitely order again! Highly recommend to all Delhi foodies."</p>
+          <div class="review-date">3 days ago · via Google</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-top">
+            <div class="reviewer-avatar">NV</div>
+            <div>
+              <div class="reviewer-name">Neha Verma</div>
+              <div class="reviewer-loc">📍 Bangalore, Karnataka</div>
+            </div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="review-text">"Office pizza party sorted every week thanks to Pizzagram! The Veg Supreme and Margherita are team favourites. They handle bulk orders brilliantly. Amazing value for money — much better than the big chains! 🙌"</p>
+          <div class="review-date">5 days ago · via Zomato</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ WHY CHOOSE ═══════════════ -->
+  <section class="why-section" id="why">
+    <div class="container">
+      <div class="section-label">✨ Why Pizzagram</div>
+      <h2 class="section-title">Why Choose <em>Pizzagram?</em></h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🌿</div>
+          <h3>Fresh Ingredients</h3>
+          <p>We source locally grown vegetables and premium quality cheese daily. No frozen toppings — ever.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Fast Delivery</h3>
+          <p>Our delivery network ensures your pizza arrives hot in 30 minutes or it's free. We mean it.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🇮🇹</div>
+          <h3>Authentic Italian Taste</h3>
+          <p>Our pizzaiolos trained in Naples bring you the most authentic Italian flavour profiles in India.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3>Affordable Prices</h3>
+          <p>Premium quality pizza starting at just ₹249. Use our app for extra discounts and combo deals.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3>Eco Packaging</h3>
+          <p>Our biodegradable boxes keep your pizza crispy while being kind to the environment.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Food Safety Certified</h3>
+          <p>FSSAI certified kitchen with 5-star hygiene rating. Your safety is our top priority.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ GALLERY ═══════════════ -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-label">📸 Gallery</div>
+      <h2 class="section-title">Pure Pizza <em>Perfection</em></h2>
+      <div class="gallery-grid">
+        <div class="gallery-item g-large">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=700&q=80" alt="Pizza Gallery 1" loading="lazy"/>
+          <div class="gallery-hover"><span>Signature Margherita</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=80" alt="Pizza Gallery 2" loading="lazy"/>
+          <div class="gallery-hover"><span>Cheese Burst</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80" alt="Pizza Gallery 3" loading="lazy"/>
+          <div class="gallery-hover"><span>Classic Margherita</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=400&q=80" alt="Pizza Gallery 4" loading="lazy"/>
+          <div class="gallery-hover"><span>Pepperoni Feast</span></div>
+        </div>
+        <div class="gallery-item g-tall">
+          <img src="https://images.unsplash.com/photo-1555072956-7758afb20e8f?w=400&q=80" alt="Pizza Gallery 5" loading="lazy"/>
+          <div class="gallery-hover"><span>Veg Supreme</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&q=80" alt="Pizza Gallery 6" loading="lazy"/>
+          <div class="gallery-hover"><span>Tikka Special</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80" alt="Pizza Gallery 7" loading="lazy"/>
+          <div class="gallery-hover"><span>Farmhouse</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CTA ═══════════════ -->
+  <section class="cta-section" id="app">
+    <div class="cta-bg">
+      <div class="cta-blob"></div>
+    </div>
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <div class="section-label light">📲 Get the App</div>
+        <h2 class="cta-title">Order Your Favourite Pizza Now from the <em>Pizzagram App</em></h2>
+        <p>Enjoy exclusive app-only discounts, live tracking, lightning-fast checkout and so much more. Download now!</p>
+        <div class="cta-buttons">
+          <a href="#" class="store-btn google-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M3.18 23.5c.38.21.82.24 1.23.08l11.65-6.73-2.56-2.56L3.18 23.5zm14.35-8.29L5.35 8.5 3.18.5C2.77.34 2.32.37 1.94.58 1.56.79 1.33 1.18 1.33 1.6v20.8c0 .42.23.81.61 1.02.19.11.4.16.62.16.2 0 .41-.05.6-.14l15.37-8.88-.9-.45zM19.5 10.38l-2.25-1.3-2.72 2.72 2.72 2.72 2.27-1.31c.65-.38.65-1.47-.02-1.83zM5.35 8.5l12.18 6.69.9-.52-11.65-6.73L5.35 8.5z"/></svg>
+            <div class="btn-text"><small>Get it on</small><strong>Google Play</strong></div>
+          </a>
+          <a href="#" class="store-btn apple-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div class="btn-text"><small>Download on the</small><strong>App Store</strong></div>
+          </a>
+        </div>
+      </div>
+      <div class="cta-visual">
+        <div class="cta-pizza-wrap">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80" alt="Order Pizza" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">🍕</span>
+            <span class="logo-text">Pizzagram</span>
+          </div>
+          <p>India's most loved pizza experience, delivered fresh to your doorstep. Crafted with ❤️ in India.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.27h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#why">Why Pizzagram</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#app">Download App</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Track Your Order</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>📧 <a href="mailto:hello@pizzagram.in">hello@pizzagram.in</a></p>
+          <p>📞 <a href="tel:+918888999000">+91 8888 999 000</a></p>
+          <p>📍 123, MG Road, Ahmedabad, Gujarat – 380001</p>
+          <div class="footer-app-btns">
+            <a href="#" class="store-btn google-btn mini">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M3.18 23.5c.38.21.82.24 1.23.08l11.65-6.73-2.56-2.56L3.18 23.5zm14.35-8.29L5.35 8.5 3.18.5C2.77.34 2.32.37 1.94.58 1.56.79 1.33 1.18 1.33 1.6v20.8c0 .42.23.81.61 1.02.19.11.4.16.62.16.2 0 .41-.05.6-.14l15.37-8.88-.9-.45zM19.5 10.38l-2.25-1.3-2.72 2.72 2.72 2.72 2.27-1.31c.65-.38.65-1.47-.02-1.83zM5.35 8.5l12.18 6.69.9-.52-11.65-6.73L5.35 8.5z"/></svg>
+              <div class="btn-text"><small>Google Play</small></div>
+            </a>
+            <a href="#" class="store-btn apple-btn mini">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <div class="btn-text"><small>App Store</small></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Pizzagram Restaurant. All rights reserved. Made with ❤️ in India 🇮🇳</p>
+        <p>FSSAI License: 12345678901234 · GST: 24ABCDE1234F1Z5</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Toast -->
+  <div class="cart-toast" id="cartToast">
+    <span>🍕 Added to cart!</span>
+  </div>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
